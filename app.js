@@ -22,7 +22,8 @@ var indexRoutes = require("./routes/index"),
     blogRoutes  = require("./routes/blog");
 
 // FIX DATABASE INFO
-mongoose.connect('mongodb://localhost/PortfolioSite');
+// mongoose.connect('mongodb://localhost/PortfolioSite');
+mongoose.connect('mongodb://<korinfigel>:<Tyannarae1!>@ds153700.mlab.com:53700/portfolio-site');
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
