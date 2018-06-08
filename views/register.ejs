@@ -1,0 +1,48 @@
+<% include ./partials/header %>
+
+<!--NAVBAR-->
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="/">Korin Figel</a>
+            </div> <!--closes navbar-header div-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/index">My Work</a></li>
+                    <li class="active"><a href="/blog">Blog</a></li>
+                </ul>
+            </div> <!--closes navbar-collapse div-->
+        </div> <!--closes div container-->
+    </div> <!--closes navbar default role navigation div-->
+<!--ENDS NAVBAR-->
+
+
+
+        <div class="container">
+            <h1 class="register">Create an account to SignUp</h1>
+
+            <form id="registerNewUserForm" action="/register" method="POST">
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="username" />
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="password" />
+                </div>
+                <div class="form-group">
+                    <button form="registerNewUserForm">
+                        <a class="rainbow-button" href="/register" alt="SignUp"></a>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+
+<% include ./partials/footer %>

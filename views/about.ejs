@@ -1,0 +1,168 @@
+<% include partials/header-about %>
+
+<!--NAVBAR-->
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand red" href="/">Korin Figel</a>
+            </div> <!--closes navbar-header div-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <% if(currentUser) { %>
+                    <li><a href="#">Signed In As <%= currentUser.username %></a></li>
+                    <li><a href="/logout">Logout</a></li>
+                    <% } %>
+                    <li class="active"><a class="rainbow-text" href="/about">About</a></li>
+                    <li><a href="/work">My Work</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </div> <!--closes navbar-collapse div-->
+        </div> <!--closes div container-->
+    </div> <!--closes navbar default role navigation div-->
+<!--ends navbar-->
+
+
+    <section id="left" class="left-side-content">
+      <div class="left-image">
+        <img src="/images/korinpro.jpg" alt="" />
+        <h2>Korin Figel</h2>
+        <p class="left-title">Developer</p>
+      </div>
+    </section>
+
+<!-- Section One *******************************-->
+    <section id="right" class="right-side-content">
+      <div class="view-one">
+      <div class="one">
+        <div class="heading">
+          <h4>What I do:</h4>
+          <p class="intro">I create unique sites and applications from start to finish. I enjoy sophisticated complexity, intricate details, and any kind of challenge.
+          </p>
+          <p class="heading-p">Front-End:</p>
+        </div>
+          <div class="languages">
+            <button class="lang-item"><span class="rainbowz">HTML</span></button>
+            <button class="lang-item"><span class="rainbowz">CSS</span></button>
+            <button class="lang-item"><span class="rainbowz">Javascript</span></button>
+          </div>
+          <div class="languages">
+            <button class="lang-item"><span class="rainbowz">Bootstrap</span></button>
+            <button class="lang-item"><span class="rainbowz">jQuery</span></button>
+            <button class="lang-item"><span class="rainbowz">Javascript</span></button>
+          </div>
+      </div>
+
+<!-- Section Two********************************** -->
+      <div class="two">
+        <div class="heading">
+          <p class="heading-p">Back-End:</p>
+        </div>
+          <div class="languages">
+            <button class="lang-item"><span class="rainbowz">Node.js</span></button>
+            <button class="lang-item"><span class="rainbowz">MongoDB</span></button>
+            <button class="lang-item"><span class="rainbowz">Express</span></button>
+          </div>
+          <div class="languages">
+            <button id="rest" class="lang-item"><span class="rainbowz">REST API's</span></button>
+            <button class="lang-item"><span class="rainbowz">Mongoose</span></button>
+            <button class="lang-item"><span class="rainbowz">Javascript</span></button>
+          </div>
+      </div>
+
+    <!-- Section Three**************************** -->
+      <div class="three">
+        <div class="heading">
+          <p class="heading-p">More:</p>
+        </div>
+        <div class="languages">
+          <button class="lang-item"><span class="rainbowz">NPM</span></button>
+          <button class="lang-item"><span class="rainbowz">Git</span></button>
+          <button class="lang-item"><span class="rainbowz">Terminal</span></button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Section Four***************************** -->
+    <div class="view-two">
+      <div class="four">
+        <div class="heading">
+          <p class="education-heading">Education/Training</p>
+        </div>
+        <div class="class">
+          <h3>LinkedIn Learning Courses:</h3>
+            <div class="item class-item1">
+              <a class="certif rainbowz" href="certificates/CertificateOfCompletion_HtmlEssentialTraining.pdf">HTML Essential Training</a>
+            </div>
+            <div class="item class-item2">
+              <a class="certif rainbowz" href="certificates/CertificateOfCompletion_CssEssentialTraining1.pdf">CSS Essential Training 1</a>
+            </div>
+            <div class="item class-item3">
+              <a class="certif rainbowz" href="certificates/CertificateOfCompletion_CssEssentialTraining2.pdf">CSS Essential Training 2</a>
+            </div>
+            <div class="item class-item4">
+              <a class="certif rainbowz" href="certificates/CertificateOfCompletion_ProgrammingFoundationsFundamentals.pdf">Programming Foundations Fundamentals</a>
+            </div>
+            <div class="item class-item5">
+              <a class="certif rainbowz" href="certificates/CertificateOfCompletion_WebDevelopmentFullStackVsFrontEnd.pdf">Web Development Foundations Full Stack vs. Front End</a>
+            </div>
+        </div>
+
+
+        <div class="edu2">
+          <h3>Other:</h3>
+            <ul class="other">
+              <li>Web Developer Bootcamp - 2017-2018
+                <p>A full stack web development bootcamp.</p>
+                <p><a id="certification" href="certificates/web-developer-bootcamp.pdf"><span class="certif rainbowz">See Certificate</span></a></p>
+              </li>
+              <li>YWCA Web Design Bootcamp - 2018</li>
+                <p>400 hour intensive bootcamp</p>
+            </ul>
+          <h3>Currently:</h3>
+          <ul>
+            <li class="other">Advanced Web Developer Bootcamp
+              <p>An advanced full stack web development bootcamp.</p>
+              <p> Expected Completion September 2018.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<!-- Third page view *********************************-->
+
+
+
+      </section>
+
+
+
+
+
+
+    <!--<div class="container">-->
+    <!--    <div class="row">-->
+    <!--        <div class="left col">-->
+    <!--            <img src="" alt="" />-->
+    <!--            <h2>Korin Figel</h2>-->
+    <!--            <h3>Developer</h3>-->
+    <!--        </div>-->
+    <!--        <div class="right col">-->
+    <!--            <ul>-->
+    <!--                <li>HTML</li>-->
+    <!--                <li>CSS</li>-->
+    <!--                <li>Javascript</li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+
+
+
+<% include partials/footer %>

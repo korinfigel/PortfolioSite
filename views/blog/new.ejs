@@ -1,0 +1,54 @@
+<% include ../partials/header %>
+
+<!--*************NAVBAR******************-->
+
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand red" href="/">Korin Figel</a>
+            </div> <!--closes navbar-header div-->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <% if(currentUser) { %>
+                    <li><a href="#">Signed In As <%= currentUser.username %></a></li>
+                    <li><a href="/logout">Logout</a></li>
+                    <% } %>
+                    <li><a class="rainbow-text" href="/about">About</a></li>
+                    <li><a href="/index">My Work</a></li>
+                    <li class="active"><a href="/blog">Blog</a></li>
+                </ul>
+            </div> <!--closes navbar-collapse div-->
+        </div> <!--closes div container-->
+    </div> <!--closes navbar default role navigation div-->
+
+<!--**************END NAVBAR*****************-->
+
+<!--*********JUMBOTRON*********-->
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Create New Blog Post</h1>
+    </div>
+
+    <!--*******-END JUMBOTRON-*********-->
+    <div class="row">
+        <form action="/blog" method="POST">
+            <div class="form-group">
+                <input type="text" name="title" placeholder="Blog Post Title" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="content" placeholder="Blog Content" />
+            </div>
+            <div class="form-group">
+                <button id="submit" style="color: #fff;" class="rainbow-button text-white" alt="Submit New Blog Post"></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<% include ../partials/footer %>

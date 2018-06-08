@@ -1,0 +1,284 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+button {
+  /*background: black;*/
+  margin: 1em;
+  border-radius: 5px;
+  border: none;
+}
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(15vw + 6px);
+  height:calc(6vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:1vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:14vw;
+  height:5vw;
+  background-color: black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 5px;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+/*******GLOBAL STYLES*****/
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding-top: 65px;
+    padding-bottom: 75px;
+    background: white;
+}
+
+.jumbotron {
+    height: 160px;
+    background: black;
+    color: white;
+    /*background: red; */
+    /*background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);*/
+    /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); */
+    /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); */
+    /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); */
+    /* Standard syntax (must be last) */
+}
+
+.jumbo-h1 {
+    font-family: 'Dosis', sans-serif;
+}
+
+.navbar {
+    background: black;
+    /*background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+}
+
+
+/*INDEX.EJS SPECIFIC STYLES*/
+/*****************************/
+.caption {
+    text-align: center;
+}
+
+.jumbotron > h1 {
+    text-align: center;
+}
+/*ENDS INDEX.EJS SPECIFIC STYLES*/
+
+/*Blog/index.ejs specific styles*/
+/******************************/
+#welcome-rainbow-button {
+    cursor: default;
+}
+
+#welcome-rainbow-button:hover {
+    text-decoration: none;
+}
+
+.blog-note {
+    text-align: center;
+    font-size: 24px;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#new-post-button {
+  display: inline-block;
+  float: right;
+}
+.blog{
+  margin-top: 40px;
+}
+#blog-title {
+    background: black;
+    /* color: #fff; */
+    text-align: center;
+    height: 50px;
+    padding-top: 15px;
+    letter-spacing: 2px;
+    border-radius: 6px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 59px;
+  margin-bottom: 20px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+}
+.blog-post-main {
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 40px;
+  background: black;
+  border-radius: 6px;
+}
+.blog-content {
+  height: 40vh;
+  padding: 25px;
+  font-size: 22px;
+  background: black;
+  color: #fff;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 2px;
+}
+.date {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/*ends blog/index.ejs */
+
+
+/*REGISTER.EJS SPECIFIC STYLES*/
+.register {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+form {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+input {
+    text-align: center;
+}
+
+/*********ABOUT************/
+
+.right {
+    float: right;
+    border: 2px solid red;
+    width: 50%;
+}
+.left {
+    border: 2px solid blue;
+    width: 50%;
+    text-align: center;
+}
+/*ends about*/
+
+/*WORK*/
+.caption {
+    color: white;
+}
+
+.rainbow-button2 {
+  width:calc(27vw);
+  height:calc(17vw);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:1vw;
+  font-weight:bold;
+}
+.rainbow-button2:after {
+  content:attr(alt);
+  width:39vw;
+  height:15vw;
+  background-color: black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 5px;
+}
+.rainbow-button2:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+.project {
+    color: white;
+}
+
+
+/*#grad1 {*/
+/*    background: red;*/
+/*    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);*/
+/*    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);*/
+/*    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);*/
+/*    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);*/
+/*    -webkit-background-clip: text;*/
+/*    -webkit-text-fill-color: transparent;*/
+/*    font-size: 5vw;*/
+/*}*/
+#title {
+    text-align: center;
+}
+
+
+.intro {
+    text-align: center;
+}
+
+/********FOOTER***********/
+
+.footer {
+    width: 100%;
+    background: black;
+    /*background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);*/
+    height: 50px;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contact {
+    padding-bottom: 5px;
+}
+.fab {
+    padding: 5px;
+    color: #fff;
+}
+
+.rainbowz {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
